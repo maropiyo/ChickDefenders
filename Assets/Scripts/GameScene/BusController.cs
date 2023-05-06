@@ -11,7 +11,7 @@ public class BusController : MonoBehaviour
     // アクセルトグル
     [SerializeField] private Toggle accelerateToggle;
     // 前進速度
-    [SerializeField] private float speed = 5.0f;
+    [SerializeField] private float speed;
 
     void Update()
     {
