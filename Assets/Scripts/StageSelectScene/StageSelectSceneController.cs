@@ -7,20 +7,20 @@ using UnityEngine.UI;
 /// </summary>
 public class StageSelectSceneController : MonoBehaviour
 {
-    // ゲームボタン
-    [SerializeField] private Button gameButton;
+    // ゲームスタートボタン
+    [SerializeField] private Button gameStartButton;
 
     private void Start()
     {
-        // スタートボタンのクリックイベントにLoadDebugStageSceneメソッドを追加
-        gameButton.onClick.AddListener(LoadDebugStageScene);
+        // スタートボタンのクリックイベントにLoadGameSceneメソッドを追加
+        gameStartButton.onClick.AddListener(LoadGameScene);
     }
 
     /// <summary>
-    /// DebugStageSceneを読み込む
+    /// GameSceneを読み込む
     /// </summary>
-    private void LoadDebugStageScene()
+    private void LoadGameScene()
     {
-        SceneManager.LoadScene("DebugStageScene");
+        SceneManager.LoadScene("GameScene");
     }
 }
